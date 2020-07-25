@@ -87,11 +87,11 @@ public class Main {
 			Random random = new Random();
 			int randomNumber = random.nextInt(staff.size());
 			Employee randomEmployee = staff.get(randomNumber);
-			int randomUID = randomEmployee.getUid();
+			int randomUID = randomEmployee.getUID();
 			if (treatments.containsKey(randomUID)) {
-				List<Pet> existingPet = treatments.get(randomUID);
-				existingPet.add(pet);
-				treatments.put(randomUID, existingPet);
+				List<Pet> existingPets = treatments.get(randomUID);
+				existingPets.add(pet);
+				treatments.put(randomUID, existingPets);
 			} else {
 				List<Pet> newPet = new ArrayList<Pet>();
 				newPet.add(pet);

@@ -18,11 +18,11 @@ public class Employee {
 		this.name = name;
 	}
 
-	public int getUid() {
+	public int getUID() {
 		return uid;
 	}
 
-	public void setUid(int uid) {
+	public void setUID(int uid) {
 		this.uid = uid;
 	}
 
